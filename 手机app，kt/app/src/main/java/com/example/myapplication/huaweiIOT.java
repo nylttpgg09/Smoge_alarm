@@ -22,10 +22,10 @@ public class huaweiIOT {
     // IoT相关配置
     private final String project_id = "";  // 项目ID
     private final String device_id = "";   // 设备ID
-    private final String service_id = "";  // 服务ID
-    private final String command_name = ""; // 命令名称，根据需要修改，我这里没有写控制命令，所以留着备用，暂时没用
+    private final String service_id = "Smoge";  // 服务ID
+    private final String command_name = "YourCommandName"; // 命令名称，根据需要修改，我这里没有写控制命令，所以留着备用，暂时没用
 
-    // IoT 接入终端节点
+    // IoT 接入终端节点（从控制台【总览】【接入信息】处获取）
     private final String endpoint = "";
 
     private String token = ""; // 全局 Token，不用动，自动获取会调用填充

@@ -24,4 +24,8 @@ interface DeviceDataDao {
     // 新增数据清理方法
     @Query("DELETE FROM device_data WHERE timestamp < :cutoff AND attribute = 'Fee'")
     suspend fun cleanupOldFeeData(cutoff: Long)
+
+    @Query("SELECT * FROM device_data WHERE timestamp >= :startTime")
+    fun getRecordsAfter(startTime: Long): Flow<List<DeviceData>>
+
 }

@@ -81,6 +81,11 @@ dependencies {
     // 确保 Kotlin 协程库已添加
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
     implementation("androidx.compose.material:material-icons-extended:1.5.4")
-
+    // Material 2
+    implementation "androidx.compose.material:material"
+    // 其他Compose依赖
+    implementation "androidx.compose.ui:ui"
+    implementation "androidx.compose.runtime:runtime"
+    implementation "androidx.compose.foundation:foundation"
 
 }
